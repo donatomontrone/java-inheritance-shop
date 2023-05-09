@@ -6,7 +6,7 @@ public class Televisore extends Prodotto {
 	private boolean smart;
 
 
-	public Televisore(String name, String brand, double price, double vat, int inch, boolean smart) {
+	public Televisore(String name, String brand, int price, int vat, int inch, boolean smart) {
 		super(name, brand, price, vat);
 		
 		setInch(inch);

@@ -35,7 +35,7 @@ public class Catalogo {
 				String brand = in.next(); 
 				
 				System.out.println("Inserisci il prezzo dello SmartPhone");
-				double price = in.nextDouble(); 
+				int price = in.nextInt(); 
 				
 				System.out.println("Inserisci l'IMEI dello SmartPhone");
 				String imei = in.next();
@@ -58,7 +58,7 @@ public class Catalogo {
 				String brand = in.next(); 
 				
 				System.out.println("Inserisci il prezzo dello televisore");
-				double price = in.nextDouble(); 
+				int price = in.nextInt(); 
 				
 				System.out.println("Inserisci le dimesioni del televisore (in pollici)");
 				int inch = in.nextInt();
@@ -80,7 +80,7 @@ public class Catalogo {
 				String brand = in.next(); 
 				
 				System.out.println("Inserisci il prezzo delle cuffie");
-				double price = in.nextDouble(); 
+				int price = in.nextInt(); 
 				
 				System.out.println("Inserisci il colore delle cuffie");
 				String color = in.next();

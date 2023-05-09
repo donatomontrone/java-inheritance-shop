@@ -6,7 +6,7 @@ public class Smartphone extends Prodotto {
 	private int storageCapacity;
 
 
-	public Smartphone(String name, String brand, double price, double vat,
+	public Smartphone(String name, String brand, int price, int vat,
 						String imei, int storageCapacity) {
 		super(name, brand, price, vat);
 		

@@ -5,7 +5,7 @@ public class Cuffia extends Prodotto{
 	private String color;
 	private String connectionType;
 
-	public Cuffia(String name, String brand, double price, double vat, String color, String connectionType) {
+	public Cuffia(String name, String brand, int price, int vat, String color, String connectionType) {
 		super(name, brand, price, vat);
 		setColor(color);
 		setConnectionType(connectionType);

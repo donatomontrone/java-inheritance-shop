@@ -7,11 +7,11 @@ public class Prodotto {
 	private int code;
 	private String name;
 	private String brand;
-	private double price;
-	private double vat;
+	private int price;
+	private int vat;
 	
 	
-	public Prodotto(String name, String brand, double price, double vat) {
+	public Prodotto(String name, String brand, int price, int vat) {
 		Random rnd = new Random();
 		code = rnd.nextInt(99999999);
 		setName(name);
@@ -37,26 +37,26 @@ public class Prodotto {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	public double getPrice() {
+	public int getPrice() {
 		return price;
 	}
-	public void setPrice(double price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
-	public double getVat() {
+	public int getVat() {
 		return vat;
 	}
-	public void setVat(double vat) {
+	public void setVat(int vat) {
 		this.vat = vat;
 	}
 	
-	public double vatPrice() {
-		return getPrice() + (getPrice() * getVat() / 100);
+	public String vatPrice() {
+		return String.format("%.2f", (getPrice() + (getPrice() * getVat() / 100f)))  ;
 	}
 	
 	protected String getInfo() {
 		return "- ID: " + getCode() + " - " + getName() + " (" + getBrand() + ")"
-				+ "\nPrezzo: " + getPrice() + " + IVA al " + getVat() + " = " + vatPrice();
+				+ "\nPrezzo: " + getPrice() + "€ + IVA al " + getVat() + "% = " + vatPrice() + "€";
 	}
 	
 	@Override
