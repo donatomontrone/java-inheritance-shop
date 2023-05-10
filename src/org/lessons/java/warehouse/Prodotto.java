@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Prodotto {
 	
-	private int code;
+	private final int code;
 	private String name;
 	private String brand;
 	private int price;
@@ -29,7 +29,7 @@ public class Prodotto {
 		return name;
 	}
 	public void setName(String name) {
-		this.name = name;
+		this.name = name; 
 	}
 	public String getBrand() {
 		return brand;

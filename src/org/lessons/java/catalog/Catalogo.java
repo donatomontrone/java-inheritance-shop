@@ -25,24 +25,41 @@ public class Catalogo {
 			
 			choise = in.nextInt();
 			
+			in.nextLine();
+			
+			if (choise == 4) break;
+			
+			System.out.println("Inserisci il modello");
+			String name = in.nextLine(); 
+
+			System.out.println("Inserisci il brand");
+			String brand = in.nextLine(); 
+			
+			System.out.println("Inserisci il prezzo");
+			int price = in.nextInt(); 
+			
+			in.nextLine();
+			
 			if (choise == 1) {
 				
 				
-				System.out.println("Inserisci il modello dello SmartPhone");
-				String name = in.next(); 
-
-				System.out.println("Inserisci il brand dello SmartPhone");
-				String brand = in.next(); 
-				
-				System.out.println("Inserisci il prezzo dello SmartPhone");
-				int price = in.nextInt(); 
+//				System.out.println("Inserisci il modello dello SmartPhone");
+//				String name = in.next(); 
+//
+//				System.out.println("Inserisci il brand dello SmartPhone");
+//				String brand = in.next(); 
+//				
+//				System.out.println("Inserisci il prezzo dello SmartPhone");
+//				int price = in.nextInt(); 
 				
 				System.out.println("Inserisci l'IMEI dello SmartPhone");
-				String imei = in.next();
+				String imei = in.nextLine();
 				
 				
 				System.out.println("Inserisci la capacità di memoria dello SmartPhone");
 				int capacity = in.nextInt();
+				
+				in.nextLine();
 				
 				products[x] = new Smartphone(name, brand, price, 22, imei, capacity);
 				
@@ -50,15 +67,15 @@ public class Catalogo {
 				
 			} else if (choise == 2) {
 				
-				System.out.println("Inserisci il modello del televisore");
-				String name = in.next(); 
-
-				
-				System.out.println("Inserisci il brand dello televisore");
-				String brand = in.next(); 
-				
-				System.out.println("Inserisci il prezzo dello televisore");
-				int price = in.nextInt(); 
+//				System.out.println("Inserisci il modello del televisore");
+//				String name = in.next(); 
+//
+//				
+//				System.out.println("Inserisci il brand dello televisore");
+//				String brand = in.next(); 
+//				
+//				System.out.println("Inserisci il prezzo dello televisore");
+//				int price = in.nextInt(); 
 				
 				System.out.println("Inserisci le dimesioni del televisore (in pollici)");
 				int inch = in.nextInt();
@@ -72,21 +89,21 @@ public class Catalogo {
 				
 				
 			} else if (choise == 3) {
-				
-				System.out.println("Inserisci il modello delle cuffie");
-				String name = in.next();
-				
-				System.out.println("Inserisci il brand delle cuffie");
-				String brand = in.next(); 
-				
-				System.out.println("Inserisci il prezzo delle cuffie");
-				int price = in.nextInt(); 
+//				
+//				System.out.println("Inserisci il modello delle cuffie");
+//				String name = in.next();
+//				
+//				System.out.println("Inserisci il brand delle cuffie");
+//				String brand = in.next(); 
+//				
+//				System.out.println("Inserisci il prezzo delle cuffie");
+//				int price = in.nextInt(); 
 				
 				System.out.println("Inserisci il colore delle cuffie");
-				String color = in.next();
+				String color = in.nextLine();
 				
 				System.out.println("Le cuffie sono wireless o cablate");
-				String connection = in.next();
+				String connection = in.nextLine();
 				
 				products[x] = new Cuffia(name, brand, price, 22, color, connection);
 				
